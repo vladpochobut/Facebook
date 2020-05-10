@@ -1,0 +1,69 @@
+﻿<Page
+    x:Class="App2.UserProfile"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:winsdkfb="using:winsdkfb"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:ConnectionId='1' Name="logoutButton" Content="Logout"                     RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Visibility="Visible" Width="120">
+            <Button.RenderTransform>
+                <CompositeTransform TranslateY="-350" TranslateX="-650"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:ConnectionId='2' Name="sendMessageButton" Content="Send message"                                RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Visibility="Visible" Width="120">
+            <Button.RenderTransform>
+                <CompositeTransform TranslateY="-300" TranslateX="-650"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:ConnectionId='3' Name="PostToFeedButton" Content="Post to feed"                               RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Visibility="Visible" Width="120">
+            <Button.RenderTransform>
+                <CompositeTransform TranslateY="-250" TranslateX="-650"/>
+            </Button.RenderTransform>
+        </Button>
+        <!--<Button Name="uploadPhotoButton" Content="Upload photo" Click="uploadPhotoButtonClick" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Visibility="Visible" Margin="0,0,0,0" Width="120">
+            <Button.RenderTransform>
+                <CompositeTransform TranslateY="-200" TranslateX="-650"/>
+            </Button.RenderTransform>
+        </Button>-->
+        <!--<Button Name="uploadVideoButton" Content="Upload video" Click="uploadVideoButtonClick" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Visibility="Visible" Margin="0,0,0,0" Width="120">
+            <Button.RenderTransform>
+                <CompositeTransform TranslateY="-150" TranslateX="-650"/>
+            </Button.RenderTransform>
+        </Button>-->
+        <Button x:ConnectionId='4' Name="albumsButton" Content="Albums"                     RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Visibility="Visible" Margin="0,0,0,0" Width="120">
+            <Button.RenderTransform>
+                <CompositeTransform TranslateY="-200" TranslateX="-650"/>
+            </Button.RenderTransform>
+        </Button>
+        <winsdkfb:ProfilePictureControl x:ConnectionId='5' x:Name="ProfilePic" Width="120" Height="120" >
+            <winsdkfb:ProfilePictureControl.RenderTransform>
+                <CompositeTransform TranslateY="-300" TranslateX="-400"/>
+            </winsdkfb:ProfilePictureControl.RenderTransform>
+        </winsdkfb:ProfilePictureControl>
+        <TextBlock x:ConnectionId='6' x:Name="userName" Text="A" Width="100" Height="20" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <CompositeTransform TranslateY="-200" TranslateX="-400"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='7' x:Name="surName" Text="B" Width="100" Height="20" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <CompositeTransform TranslateY="-150" TranslateX="-400"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='8' x:Name="gender" Text="C" Width="100" Height="20" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <CompositeTransform TranslateY="-100" TranslateX="-400"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:ConnectionId='9' x:Name="email" Text="D" Width="400" Height="20" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <CompositeTransform TranslateY="-50" TranslateX="-250"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+    </Grid>
+</Page>
+

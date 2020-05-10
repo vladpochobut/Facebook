@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>38ef934f-15ee-4007-937b-12bb6b05a281</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>5f78dd41-bd3b-4705-96ea-fc78ba9edd94</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="MainPage.xaml.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Facebook.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicOAuthOperations.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="UserProfile.xaml.cpp" />
+    <ClCompile Include="PostToFeedPage.xaml.cpp" />
+    <ClCompile Include="AlbumPage.xaml.cpp" />
+    <ClCompile Include="SendPage.xaml.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="MainPage.xaml.h" />
+    <ClInclude Include="Facebook.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicOAuthOperations.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="UserProfile.xaml.h" />
+    <ClInclude Include="PostToFeedPage.xaml.h" />
+    <ClInclude Include="FBReturnObject.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="AlbumPage.xaml.h" />
+    <ClInclude Include="SendPage.xaml.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\facebook_logo.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App2_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml" />
+    <Page Include="UserProfile.xaml" />
+    <Page Include="PostToFeedPage.xaml" />
+    <Page Include="SendPage.xaml" />
+    <Page Include="AlbumPage.xaml" />
+  </ItemGroup>
+</Project>

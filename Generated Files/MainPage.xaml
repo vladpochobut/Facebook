@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="App2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.5,0.5" RequestedTheme="Light">
+        <Grid.RenderTransform>
+            <CompositeTransform TranslateY="0"/>
+        </Grid.RenderTransform>
+        <Button x:ConnectionId='1' Name="loginButton" Content="Login"                    RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Visibility="Visible" Margin="0,0,0,-4" Width="104">
+            <Button.RenderTransform>
+                <CompositeTransform TranslateY="150" TranslateX="0"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:ConnectionId='2' Name="changeUserButton" Content="Change user"                         RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Visibility="Visible" Margin="0,0,0,-4">
+            <Button.RenderTransform>
+                <CompositeTransform TranslateY="200" TranslateX="0"/>
+            </Button.RenderTransform>
+        </Button>
+        <Image x:ConnectionId='3' Name="facebookLogo" Source="Assets/facebook_logo.png" VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="1000"/>
+    </Grid>
+</Page>
+
